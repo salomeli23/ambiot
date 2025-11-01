@@ -21,7 +21,7 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
     : isLimpiador 
     ? 'bg-gradient-to-br from-red-600 via-red-500 to-red-700'
     : isAntimanchas
-    ? 'bg-gradient-to-br from-pink-50 via-white to-pink-100'
+    ? 'bg-gradient-to-br from-purple-400 via-purple-300 to-purple-500'
     : isAntiage
     ? 'bg-gradient-to-br from-[#01b2c6] via-[#01a5b8] to-[#0198aa]'
     : 'bg-gradient-to-br from-pink-50 via-white to-pink-100';
@@ -59,7 +59,7 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
                   : isLimpiador 
                   ? 'bg-gradient-to-r from-red-600 to-red-700'
                   : isAntimanchas
-                  ? 'bg-gradient-to-r from-cyan-500 to-blue-600'
+                  ? 'bg-gradient-to-r from-purple-500 to-purple-600'
                   : isAntiage
                   ? 'bg-gradient-to-r from-[#01b2c6] to-[#0198aa]'
                   : 'bg-gradient-to-r from-pink-500 to-pink-600'
@@ -84,7 +84,7 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
                     : isLimpiador 
                     ? 'text-red-700'
                     : isAntimanchas
-                    ? 'text-cyan-700'
+                    ? 'text-purple-700'
                     : isAntiage
                     ? 'text-[#01b2c6]'
                     : 'text-pink-700'
@@ -95,7 +95,7 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
                       : isLimpiador 
                       ? 'text-red-600'
                       : isAntimanchas
-                      ? 'text-cyan-600'
+                      ? 'text-purple-600'
                       : isAntiage
                       ? 'text-[#01b2c6]'
                       : 'text-pink-600'
@@ -111,7 +111,7 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
                           : isLimpiador 
                           ? 'text-red-600'
                           : isAntimanchas
-                          ? 'text-cyan-600'
+                          ? 'text-purple-600'
                           : isAntiage
                           ? 'text-[#01b2c6]'
                           : 'text-pink-600'
@@ -130,7 +130,7 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
                   : isLimpiador 
                   ? 'bg-red-50/50'
                   : isAntimanchas
-                  ? 'bg-pink-50/50'
+                  ? 'bg-purple-50/50'
                   : isAntiage
                   ? 'bg-[#01b2c6]/10'
                   : 'bg-pink-50/50'
@@ -147,12 +147,12 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
                   : isLimpiador 
                   ? 'bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700'
                   : isAntimanchas
-                  ? 'bg-white hover:bg-gray-50'
+                  ? 'bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700'
                   : isAntiage
                   ? 'bg-gradient-to-r from-[#01b2c6] to-[#0198aa] hover:from-[#0198aa] hover:to-[#017a8a]'
                   : 'bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700'
               } ${
-                isAntimanchas ? 'text-black' : 'text-white'
+                isAntimanchas ? 'text-white' : 'text-white'
               } font-bold text-xl w-64 h-64 rounded-full shadow-2xl transform hover:scale-125 transition-all duration-500 hover:shadow-[0_0_50px_rgba(0,0,0,0.5)] animate-bounce hover:animate-pulse border-4 ${
                 isAntimanchas ? 'border-white/50 hover:border-white/80' : 'border-white/50 hover:border-white/80'
               } mx-auto flex items-center justify-center relative overflow-hidden group`}>
@@ -173,7 +173,7 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
                 : isLimpiador 
                 ? 'text-red-700'
                 : isAntimanchas
-                ? 'text-cyan-700'
+                ? 'text-purple-700'
                 : isAntiage
                 ? 'text-[#01b2c6]'
                 : 'text-pink-700'
