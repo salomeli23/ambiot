@@ -21,7 +21,7 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
     : isLimpiador 
     ? 'bg-gradient-to-br from-red-600 via-red-500 to-red-700'
     : isAntimanchas
-    ? 'bg-gradient-to-br from-cyan-500 via-blue-500 to-teal-600'
+    ? 'bg-gradient-to-br from-pink-50 via-white to-pink-100'
     : isAntiage
     ? 'bg-gradient-to-br from-[#01b2c6] via-[#01a5b8] to-[#0198aa]'
     : 'bg-gradient-to-br from-pink-50 via-white to-pink-100';
@@ -130,7 +130,7 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
                   : isLimpiador 
                   ? 'bg-red-50/50'
                   : isAntimanchas
-                  ? 'bg-cyan-50/50'
+                  ? 'bg-pink-50/50'
                   : isAntiage
                   ? 'bg-[#01b2c6]/10'
                   : 'bg-pink-50/50'
@@ -141,34 +141,19 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
                   className="w-full max-w-sm mx-auto rounded-2xl shadow-2xl"
                 />
               </div>
-              <div className={`${
+              <button className={`${
                 isMicelar 
-                  ? 'bg-gradient-to-r from-yellow-500 to-yellow-600' 
+                  ? 'bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700' 
                   : isLimpiador 
-                  ? 'bg-gradient-to-r from-red-500 to-red-600'
+                  ? 'bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700'
                   : isAntimanchas
-                  ? 'bg-gradient-to-r from-cyan-500 to-blue-500'
+                  ? 'bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600'
                   : isAntiage
-                  ? 'bg-gradient-to-r from-[#01b2c6] to-[#0198aa]'
-                  : 'bg-gradient-to-r from-pink-500 to-pink-600'
-              } rounded-2xl p-6 shadow-lg`}>
-                <p className="text-white font-bold text-xl mb-2">
-                  🎉 ¡Felicitaciones!
-                </p>
-                <p className={`${
-                  isMicelar 
-                    ? 'text-yellow-50' 
-                    : isLimpiador 
-                    ? 'text-red-50'
-                    : isAntimanchas
-                    ? 'text-cyan-50'
-                    : isAntiage
-                    ? 'text-white'
-                    : 'text-pink-50'
-                }`}>
-                  Has encontrado tu producto ideal
-                </p>
-              </div>
+                  ? 'bg-gradient-to-r from-[#01b2c6] to-[#0198aa] hover:from-[#0198aa] hover:to-[#017a8a]'
+                  : 'bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700'
+              } text-white font-bold text-2xl px-8 py-6 rounded-2xl shadow-lg transform hover:scale-110 transition-all duration-300 hover:shadow-2xl animate-pulse hover:animate-none w-full`}>
+                <span className="drop-shadow-lg">OPRIME BOTÓN</span>
+              </button>
             </div>
           </div>
         </div>
