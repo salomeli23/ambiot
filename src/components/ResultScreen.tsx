@@ -151,7 +151,9 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
                   : isAntiage
                   ? 'bg-gradient-to-r from-[#01b2c6] to-[#0198aa] hover:from-[#0198aa] hover:to-[#017a8a]'
                   : 'bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700'
-              } text-white font-bold text-2xl px-8 py-6 rounded-2xl shadow-lg transform hover:scale-110 transition-all duration-300 hover:shadow-2xl animate-pulse hover:animate-none w-full`}>
+              } text-white font-bold text-xl w-64 h-64 rounded-full shadow-2xl transform hover:scale-125 transition-all duration-500 hover:shadow-[0_0_50px_rgba(0,0,0,0.5)] animate-bounce hover:animate-pulse border-4 border-white/50 hover:border-white/80 mx-auto flex items-center justify-center relative overflow-hidden group`}>
+                <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
+                <div className="absolute inset-0 animate-ping bg-white/30 rounded-full opacity-75"></div>
                 <span className="drop-shadow-lg">OPRIME BOTÓN</span>
               </button>
             </div>
