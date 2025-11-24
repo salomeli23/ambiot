@@ -21,7 +21,7 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
     : isLimpiador 
     ? 'bg-gradient-to-br from-red-600 via-red-500 to-red-700'
     : isAntimanchas
-    ? 'bg-gradient-to-br from-purple-600 via-purple-500 to-purple-700'
+    ? 'bg-gradient-to-br from-purple-400 via-purple-300 to-purple-500'
     : isAntiage
     ? 'bg-gradient-to-br from-[#01b2c6] via-[#01a5b8] to-[#0198aa]'
     : 'bg-gradient-to-br from-pink-50 via-white to-pink-100';
@@ -31,7 +31,7 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
     : isLimpiador 
     ? 'red' 
     : isAntimanchas
-    ? 'purple'
+    ? 'cyan'
     : isAntiage
     ? 'blue'
     : 'pink';
@@ -59,7 +59,7 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
                   : isLimpiador 
                   ? 'bg-gradient-to-r from-red-600 to-red-700'
                   : isAntimanchas
-                  ? 'bg-gradient-to-r from-purple-600 to-purple-700'
+                  ? 'bg-gradient-to-r from-purple-500 to-purple-600'
                   : isAntiage
                   ? 'bg-gradient-to-r from-[#01b2c6] to-[#0198aa]'
                   : 'bg-gradient-to-r from-pink-500 to-pink-600'
@@ -141,34 +141,25 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
                   className="w-full max-w-sm mx-auto rounded-2xl shadow-2xl"
                 />
               </div>
-              <div className={`${
+              <button className={`${
                 isMicelar 
-                  ? 'bg-gradient-to-r from-yellow-500 to-yellow-600' 
+                  ? 'bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700' 
                   : isLimpiador 
-                  ? 'bg-gradient-to-r from-red-500 to-red-600'
+                  ? 'bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700'
                   : isAntimanchas
-                  ? 'bg-gradient-to-r from-purple-500 to-purple-600'
+                  ? 'bg-white hover:bg-gray-50'
                   : isAntiage
-                  ? 'bg-gradient-to-r from-[#01b2c6] to-[#0198aa]'
-                  : 'bg-gradient-to-r from-pink-500 to-pink-600'
-              } rounded-2xl p-6 shadow-lg`}>
-                <p className="text-white font-bold text-xl mb-2">
-                  🎉 ¡Felicitaciones!
-                </p>
-                <p className={`${
-                  isMicelar 
-                    ? 'text-yellow-50' 
-                    : isLimpiador 
-                    ? 'text-red-50'
-                    : isAntimanchas
-                    ? 'text-purple-50'
-                    : isAntiage
-                    ? 'text-white'
-                    : 'text-pink-50'
-                }`}>
-                  Has encontrado tu producto ideal
-                </p>
-              </div>
+                  ? 'bg-gradient-to-r from-[#01b2c6] to-[#0198aa] hover:from-[#0198aa] hover:to-[#017a8a]'
+                  : 'bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700'
+              } ${
+                isAntimanchas ? 'text-gray-800' : 'text-white'
+              } font-bold text-xl w-64 h-64 rounded-full shadow-2xl transform hover:scale-125 transition-all duration-500 hover:shadow-[0_0_50px_rgba(0,0,0,0.5)] animate-bounce hover:animate-pulse border-4 ${
+                isAntimanchas ? 'border-purple-400 hover:border-purple-300' : 'border-white/50 hover:border-white/80'
+              } mx-auto flex items-center justify-center relative overflow-hidden group`}>
+                <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
+                <div className="absolute inset-0 animate-ping bg-white/30 rounded-full opacity-75"></div>
+                <span className="drop-shadow-lg font-bold">{isAntimanchas ? 'OPRIME BOTÓN BLANCO' : 'OPRIME BOTÓN'}</span>
+              </button>
             </div>
           </div>
         </div>
