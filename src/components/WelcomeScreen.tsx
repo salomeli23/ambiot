@@ -49,12 +49,20 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart }) => {
         
         <button
           onClick={onStart}
-          className="bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold text-2xl md:text-3xl px-16 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 hover:shadow-pink-500/50"
+          className="bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold text-2xl md:text-3xl px-16 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 hover:shadow-pink-500/50 animate-bounce"
         >
           Comenzar Test
         </button>
-        
-        <p className="text-gray-500 mt-6 text-lg">
+
+        <div className="mt-6 flex justify-center animate-bounce">
+          <img
+            src="/1f447 copy.png"
+            alt="Pointing hand"
+            className="w-16 h-16 md:w-20 md:h-20"
+          />
+        </div>
+
+        <p className="text-gray-500 mt-4 text-lg">
           Solo toma 2 minutos completar
         </p>
       </div>
