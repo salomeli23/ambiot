@@ -160,6 +160,14 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({ result, onRestart })
                 <div className="absolute inset-0 animate-ping bg-white/30 rounded-full opacity-75"></div>
                 <span className="drop-shadow-lg font-bold">{isAntimanchas ? 'OPRIME BOTÓN BLANCO' : 'OPRIME BOTÓN'}</span>
               </button>
+
+              <div className="mt-8 flex justify-center animate-bounce">
+                <img
+                  src="/1f447 copy.png"
+                  alt="Pointing hand"
+                  className="w-48 h-48"
+                />
+              </div>
             </div>
           </div>
         </div>
