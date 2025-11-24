@@ -53,7 +53,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart }) => {
         >
           Comenzar Test
         </button>
-        
+
         <p className="text-gray-500 mt-6 text-lg">
           Solo toma 2 minutos completar
         </p>
